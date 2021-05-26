@@ -7,19 +7,19 @@
 "use strict"
 
 function enterClicked() {
-  //input
+  // input
   const age = parseInt(document.getElementById("age").value)
   const day = document.getElementById("day").value
 
   // process
   if (age < 5 || age > 95) {
-    //free
+    // free
     document.getElementById('answer').innerHTML = "You get in for free"
   } else if ((day == "tuesday" || day == "thursday") || (age > 12 && age < 21)) {
-    //student pricing
+    // student pricing
     document.getElementById('answer').innerHTML = "You are eligible for student pricing."
   } else {
-    //regular price
+    // regular price
     document.getElementById('answer').innerHTML = "You must pay regular price."
   }
 }
